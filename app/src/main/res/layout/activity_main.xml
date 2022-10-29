@@ -7,12 +7,142 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/main_subtitle_participants_ptbr"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="56dp"
+        android:text="Insira o número de participantes:"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_insert_totalAmount" />
+
+    <TextView
+        android:id="@+id/main_subtitle_amount_eng"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="122dp"
+        android:text="Enter the total amount:"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_subtitle_amount_ptbr" />
+
+    <TextView
+        android:id="@+id/main_subtitle_participants_eng"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="101dp"
+        android:text="Enter the number of participants:"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_subtitle_participants_ptbr" />
+
+    <EditText
+        android:id="@+id/main_insert_totalAmount"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginBottom="66dp"
+        android:ems="10"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:text="0.0"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/main_subtitle_participants_ptbr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_subtitle_amount_eng" />
+
+    <EditText
+        android:id="@+id/main_insert_participants"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="122dp"
+        android:ems="10"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:text="0"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_subtitle_participants_eng" />
+
+    <TextView
+        android:id="@+id/main_title_ptbr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="96dp"
+        android:text="Bem-vindo(a) ao DivideConta"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.445"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/main_title_eng"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="42dp"
+        android:text="Welcome to DivideConta"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/main_subtitle_amount_ptbr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_title_ptbr"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/main_button_calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="181dp"
+        android:onClick="sendValues"
+        android:text="CALC."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_insert_participants"
+        app:layout_constraintVertical_bias="0.012" />
+
+    <TextView
+        android:id="@+id/main_subtitle_amount_ptbr"
+        android:layout_width="168dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="121dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="122dp"
+        android:text="Insira o valor total:"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_title_ptbr" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
